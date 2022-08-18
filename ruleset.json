@@ -1,0 +1,36 @@
+{
+    "name": "Ignoring rules",
+    "description": "Ignoring validation rules.",
+    "rules": [
+        {
+            "id": "AS0092",
+            "action": "None",
+            "justication": "The app.json file must specify an Azure Application Insights resource with the property 'applicationInsights'"
+        },
+        {
+            "id": "AS0015",
+            "action": "None",
+            "justication": "Just ignore"
+        },
+        {
+            "id": "AS0051",
+            "action": "None",
+            "justication": "Just ignore"
+        },
+        {
+            "id": "AS0052",
+            "action": "None",
+            "justication": "Just ignore"
+        },
+        {
+            "id": "AS0054",
+            "action": "None",
+            "justication": "Just ignore"
+        },
+        {
+            "id": "AS0084",
+            "action": "None",
+            "justication": "Just ignore"
+        }
+    ]
+    }
