@@ -13,6 +13,7 @@ table 50100 "Low My Item"
         field(2; "Vender No."; Code[20])
         {
             Caption = 'Vender No.';
+            TableRelation = Vendor."No.";
             DataClassification = EndUserPseudonymousIdentifiers;
         }
         field(3; Comment; Text[250])
@@ -52,7 +53,7 @@ table 50100 "Low My Item"
 
     var
 
-        Vendor: Record Vendor;
+        vendor: Record Vendor;
 
     begin
 
@@ -61,14 +62,14 @@ table 50100 "Low My Item"
                 Rec.Comment := Vendor.Name;
 
     end;
-    Local trigger OnValidate()
+    // Local trigger OnValidate()
 
-                    begin
+    //                 begin
 
-                        if Rec."Item No." = 'A' then
+    //                     if Rec."Item No." = 'A' then
 
-                            Message('Hi');
+    //                        Message('Hi');
 
-                    end;
-                    
+    //                end;
+
 }
